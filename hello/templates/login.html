@@ -1,0 +1,12 @@
+{% block content %}
+
+<form action="{% url 'login1'%}"  method="post">
+ {% csrf_token %}
+    
+	<p><label for="date">First Name</label><input type="text" name="first_name" required value=""></p>
+	<p><label for="date">Password</label><input type="password" name="password"  value=""></p>
+	<input type="submit" value="Login">
+  
+</form>
+
+{% endblock %}

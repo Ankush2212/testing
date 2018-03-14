@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>Clubfred</title>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{% static 'css/style.css'%}"/>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/youngserif" type="text/css"/>
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+  </head>
+  <body>
+    <script>
+var name = window.prompt("Enter pass", "Pass");
+
+if(name=='mypass')
+{
+$('body').show();
+
+}
+else{
+alert('Wrong password');
+}
+</script>
+<div class="main">    
+  <div class="container">
+	   <div class="most_outer">
+		 <!-- header Sections -->
+		   <div class="header">
+			 <div class="col-md-2 col-sm-2 col-xs-12 hed_left">
+				<div class="logo-out"><img src="{% static 'images/logo.png'%}"></div>
+			 </div>
+			 <div class="col-md-10 col-sm-10 col-xs-12 hed_right">
+			    <div class="top_right">
+				    <div class="col-md-3 col-sm-3 col-xs-6 text-left">
+					   <div class="contact_no">
+					      <ul>
+							  <li><img class="phone" src="{% static 'images/phone.png'%}"><a href=""><span class="num">24/7</span> 020 341 38 14</a></li>
+							</ul>
+					   </div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-6 text-right">
+					   <div class="top_button">
+					     <ul>
+							  <li class="club"><a href="">Join the club</a></li>
+							  <li class="eng_list"><a href=""><span class="eng">ENG</span>/<span class="nll">NL</span></a></li>
+						 </ul>	  
+					   </div>
+					</div>
+				</div>
+				<div class="bottom_right">
+				    <nav class="navbar">
+					  <div class="container-fluid">
+						<!--div class="navbar-header">
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+						</div-->
+						<ul class="nav navbar-nav">
+						  <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">HOUSEKEEPING
+							<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="dropdown-menu personnal">
+							  <li><p>Your personnal manager has just arrived</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							</ul>
+						  </li>	
+                           <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">ROOM SERVICE
+							<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul class="dropdown-menu personnal_one">
+							  <li><p>Like your favorite </br>hotel, only this</br> time at home !</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							  <li class="more"><a href="#">See Our Prices</a></li>
+							</ul>
+						  </li> 
+						  <li><a href="#">HOLIDAY RENTAL</a></li>
+						  <li><a href="#">HOTEL</a></li>					  
+						</ul>
+					  </div>
+					</nav> 
+				</div>
+			 </div>
+		   </div>
+		   <div class="clear" style="clear: both;"></div>		   
+		 <!--end Header Sections--->
+		 
+		 
+		 <!--Banner Sections--->
+		  <div class="col-md-12 col-sm-12 col-xs-12 banner_out">
+		    <div class="banner"><img src="{% static 'images/banner.jpg'%}">
+			</div>
+			<div class="banner_text">
+			
+			    <div class="banner_top"><h1>The Laxury of a </br>hotel ar home.</h1></div> 
+				<div class="bdr"><img src="{% static 'images/bdr.jpg'%}"></div>    
+				<div class="banner_bottom"><h5><span class="Made">Made with love for</span></br><span class="COUPLES">COUPLES</span></h5></div>
+                
+					<div class="banner_arrow">
+					    <div class="circle_div"><a href="#"><i class="fa fa-angle-down" aria-hidden="true"></i></a></div>
+					</div>				
+			</div>
+		  </div>
+		   <div class="clear" style="clear: both;"></div>	
+		   <!--Banner Sections End--->
+		 <!--Banner Sections bottom--->
+		  <div class="col-md-12 col-sm-12 col-xs-12 De_check">
+		       <div class="container">
+			      <div class="check_text">
+				     <h1 style="text-align: center;">De check In.</h1>
+				  </div>
+				  
+					  <div class="Decheck_bottom">
+						 <div class="col-md-3 col-sm-3 col-xs-6 step_four">
+						   <h4>01</h4>
+						   <h3>De kennismaking.</h3>
+						   <p>Tijdens de intake geef je aan waar je hulpje  voor nodig hebt.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-3 col-xs-6 step_four">
+							<h4>02</h4>
+						   <h3>Zelf samenstellen.</h3>
+						   <p>Voeg wekelijks extra diensten toe en hulpje.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-3 col-xs-6 step_four">
+							<h4>03</h4>
+						   <h3>Fred komt langs.</h3>
+						   <p>Jouw huishaudeljke taken en lijstje worden behandeld.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-3 col-xs-6 step_four">
+						   <h4>04</h4>
+						   <h3>Vakantie in huis.</h3>
+						   <p>Meer tijd voor jezelf en andere leuke dingen in het leven.</p>
+						 </div>
+					   </div>   
+				</div>  
+			</div>
+			<div class="clear" style="clear: both;"></div>	
+			<!--4 step end--->	
+			<div class="col-md-12 col-sm-12 col-xs-12 Five_star">
+			    <div class="re_cont">
+				   <div class="Five_text">
+				      <h1 style="text-align: center;">A five star home</h1>
+				   </div>
+				   <div class="Fivetext_bottom">
+				      <div id="a">
+					     <h2>A fresh home every week</h2>
+					     <ul class="week">
+						    <li><img src="{% static 'images/check.png'%}"><a>The best of our housekeeping service</a></li>
+							<li><img src="{% static 'images/check.png'%}"><a>Your weekly to-do list done</a></li>
+						 </ul>
+					     
+					  </div>
+					  <div id="b">
+					    <h2>Your reliable agent</h2>
+					     <ul class="week">
+						    <li><img src="{% static 'images/check.png'%}"><a>Screened and trained by hotel principles</a></li>
+							<li><img src="{% static 'images/check.png'%}"><a>Your home handled with carec</a></li>
+							<li><img src="{% static 'images/check.png'%}"><a>Key service on point</a></li>
+						 </ul>
+					  </div>
+					  <div id="c">
+					    <h2>Tailored to your home</h2>
+						<div class="week_left">
+					       <ul class="week">
+						    <li><img src="{% static 'images/tidy.png'%}"><a>Tidy up room</a></li>
+							<li><img src="{% static 'images/dil.png'%}"><a>Tidy up bedrooms</a></li>
+							<li><img src="{% static 'images/flower.png'%}"><a>Flower care</a></li>
+						 </ul>
+					    </div>
+						<div class="week_right">
+					       <ul class="week">
+						    <li><img src="{% static 'images/laundary.png'%}"><a>Laundry and ironing</a></li>
+							<li><img src="{% static 'images/home1.png'%}"><a>Home cleaning</a></li>
+							<li><img src="{% static 'images/wastage.png'%}"><a>Waste sorting</a></li>
+						 </ul>
+					    </div>
+				      </div>
+					  
+					</div>	
+					<div class="recon_right">
+					  <img src="{% static 'images/right-side.jpg'%}">
+					</div>	
+					<div class="book"><button type="button">SEE PLANS</button></div>				
+			   </div>
+		   </div>
+		     <div class="clear" style="clear: both;"></div>	
+		   <!--4 step end--->	
+		   
+		   <div class="col-md-12 col-sm-12 col-xs-12 room_services">
+		        <div class="recont_sec">
+				  <div class="Five_text">
+				      <h1 style="text-align: center;">A five star home</h1>
+				   </div>
+				   <div class="room-bottom">
+				     <div class="out_four">
+					     <div class="col-md-6 col-sm-6 col-xs-12 fout_left text-center">
+						         <div class="icon"><img src="{% static 'images/four1.png'%}"></div>
+								 <div class="hed"><h2>Home interior.</h2>
+								   <h4>Providing interior design and maintenance <br>
+										to boost performance</h4>
+								 </div>
+						 </div>
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_left text-center">
+						         <div class="icon"><img src="{% static 'images/four2.png'%}"></div>
+								 <div class="hed"><h2>Home interior.</h2>
+								   <h4>Providing interior design and maintenance <br>
+										to boost performance</h4>
+								 </div>
+						 </div>
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_right text-center">
+						        <div class="icon"><img src="{% static 'images/four3.png'%}"></div>
+								 <div class="hed"><h2>Home interior.</h2>
+								   <h4>Providing interior design and maintenance <br>
+										to boost performance</h4>
+								 </div>
+						 </div>
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_right text-center">
+						        <div class="icon"><img src="{% static 'images/four4.png'%}"></div>
+								 <div class="hed"><h2>Home interior.</h2>
+								   <h4>Providing interior design and maintenance <br>
+										to boost performance</h4>
+								 </div>
+						 </div>
+						 <div class="footer_logo">
+								 <ul class="foot_logo">
+												  <li><img src="{% static 'images/3rd_logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/2nd-logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/1st_logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/5th_logo.jpg'%}"></li>
+								  </ul>
+						 </div>
+					 </div>
+				   
+				   </div>
+				    <div class="recont_secright">
+					  <img src="{% static 'images/left-side.jpg'%}">
+					</div>   
+				</div>
+		     
+		   
+		   </div>
+		   <div class="clear" style="clear: both;"></div>	
+		    <!--room Services end --->
+		   <div class="col-md-12 col-sm-12 col-xs-12 Five_star">
+		     	<div class="re_cont">
+				   <!--div class="Five_text">
+				      <h1 style="text-align: center;">A five star home</h1>
+				   </div-->
+				   <div class="Fivetext_bottom">
+				      <div id="a">
+					     <h2>Graham S.</h2>
+					     <ul class="week Graham">
+						    <li>Lead supply chain @Unilever</li>
+							<li>From Zwistserland.</li>
+						 </ul>
+					     
+					  </div>
+					  <div class="testi">
+					    <h2>“There is a sense</h2>
+						<h2>of peace and calm</h2>
+						<h2>when you come home</h2>
+						<h2>and everything looks</h2>
+						<h2>organized.</h2>
+						<h2>It’s incredible, no other </h2>
+						<h2>service does it this way.”</h2>
+					  </div>
+					  <div class="book" id="book"><button type="button">More happy Customer</button></div>	
+					</div>	
+					<div class="recon_right">
+					  <img src="{% static 'images/right-side2.jpg'%}">
+					</div>				
+			   </div>
+		    
+		   
+		   </div>
+		   
+		   <!--Five_star end --->
+		   
+		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left">
+				   <h1>Clubfred.</h1>
+				     <ul class="hot">
+				       <li>Hotel service at home</li>
+					   <li>Brouwersgracht 246</li>
+					   <li>1013 HE, Amsterdam</li></br></br>
+					   <li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get">Get started with fred.</li>
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right">				 
+                        <p>Stay in touch and receive hotel gifts</p>
+						<form action="" method="post">
+							<div class="input-prepend"><input type="text" id="" name="" placeholder="EMAIL@DOMAIN.COM	">
+							<input type="submit" value="Subscribe" class="btn btn-large" />
+							</div>
+					  </form>
+					  <h1>Follow Us</h1>
+						 <ul class="soc">
+							   <li><img src="{% static 'images/fb.png'%}"></li>
+							   <li><img src="{% static 'images/t.png'%}"></li>
+							   <li><img src="{% static 'images/i.png'%}"></li>
+							   <li><img src="{% static 'images/p.png'%}"></li>
+							   <li><img src="{% static 'images/i.png'%}"></li>						   
+						 </ul>					 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer12">
+				   <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+				   <h5 class="fred">© 2017 Clubfred.</h5>
+				   </div>
+				   <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+					  <div class="how">
+								   <ul class="story">
+									   <li><a>Our story |</a></li>
+									   <li><a>How it works |</a></li>
+									   <li><a>Our plans |</a></li>
+									   <li><a> Appartments |</a></li>
+									   <li><a>Testimonials |</a></li>
+									   <li><a>Fred Academy</a></li>						   
+								 </ul>
+							 </div>
+				   </div>
+				 </div>  
+			   
+		   
+		   
+</div>
+</div>				
+</div>				
+  </body>
+</html>  

@@ -1,0 +1,1033 @@
+/********Richa CSS 20-DEC-2017**********/
+@media only screen and (max-width:2700px){
+	
+	.tabbable-line ul.list-inline li a ,  .tabbable-line > .nav-tabs > li:hover > a{padding-bottom: 5px !important;}
+}
+
+@media only screen and (max-width: 1199px){
+	_::-webkit-full-page-media, _:future, :root .contact_no ul li a  {    font-size: 11px;  }
+	.hotel_textbox2 {
+    padding: 10px 3px 0px 40px;
+}
+.hotel_text {
+    background-color: #fbf5f4;
+    height: 298px;
+}
+
+	div#bok {
+    margin-top: 33%;
+}
+	.inner_box.checking img {
+    height: auto !important;
+}
+.client p{    font-size: 22px;}
+	p.myptag {
+    min-height: 120px;
+}
+
+.checking {
+    height: 684px;
+}
+
+
+	.hed {
+    min-height: 134px;
+}
+.hed.hed_pricing {
+    min-height: 162px;
+}
+.out_four {
+width: 100%;
+}
+	.banner_top h1{font-size:40px;}
+	 .hed_right nav ul li {
+    margin: 0px 14px;
+}
+.contact_no ul li {
+    width: 157px;
+}
+ul.nav.navbar-nav li a:first-child {
+    padding: 9px 1px 1px 21px;
+}
+.input-prepend input.btn.btn-large {
+    margin-top: 0px;
+}
+.input-prepend input[type="text"] {
+    width: 50%;
+    padding: 3px 24px 0px 14px;
+}
+.service_box {
+    width: 447px;
+}
+}
+@media only screen and (max-width: 991px){
+	.hotel_text {
+    height: 228px;
+}
+.textbox2.hotel_textbox2 h4 {
+    font-size: 26px;
+}
+.textbox2.hotel_textbox2 p {
+    font-size: 17px !important;
+}
+.recon_right1 {
+    width: 84%;
+    float: right;
+    position: absolute;
+    top: 12%;
+    right: -44%;
+}
+	div#bok {
+    margin-top: 35%;
+}
+.book {
+    margin-top: 12%;
+}
+
+
+	.inner_box.inner_box_apprt {
+    width: 96%;
+    margin: 0px auto!important;
+}
+	.checking {
+    height: auto;
+}
+	.testimonial h1:after{    top: 126px;}
+	.room:nth-of-type(even) .inner_box {
+    float: left;
+    margin-right: 0;
+    margin: 40px 0px;
+}
+	.room .img-responsive {
+    width: auto;
+    height: auto;
+    margin-left: 0px;
+    margin-top: 3px;
+}
+.room:nth-of-type(even) .img-responsive {
+    width: auto;
+    height: auto;
+}
+.room h4 {
+    color: #f78471;
+    font-family: "youngserifregular";
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+.room p {
+    margin: 0px auto;
+    text-align: center;
+    line-height: 25px;
+    width: 80%;
+    float: none;
+    position: relative;
+    left: 0;
+    margin-bottom: 20px;
+}
+.textbox1 {
+    background-color: #ffffff;
+    padding: 10px 7px;
+    font-size: 20px;
+    font-family: "youngserifregular";
+    text-align: left;
+    margin: 4px 0 0 0;
+    /* height: 100px; */
+    color: rgb(51,51,51);
+    letter-spacing: 1px;
+    color: #f6735d;
+    margin-left: 0px;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+.textbox1 p {
+    padding-left: 0px;
+}
+.textbox1 strong {
+    font-family: 'poppinssemibold';
+    font-size: 13px;
+}
+.textbox1 span {
+    color: #333333;
+    font-family: "poppinsregular";
+    font-size: 13px;
+    margin: 0;
+    width: 85%;
+    display: inline-block;
+    padding-left: 30px;
+}
+.room ul li, .whychooseus ul li {
+    width: 80%;
+    float: left;
+    background: url(../images/Websiteicons14.png) left 9px no-repeat;
+    padding-left: 35px;
+    color: rgb(51,51,51);
+    font-family: "poppinsregular";
+    font-size: 13px !important;
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+.card {
+    width: 100%;
+    margin: 10px auto !important;
+    padding: 10px;
+}
+
+
+.team {
+    text-align: center;
+}
+.card img {
+    width: 300px !important;
+}
+	.storyfile {
+    /* padding: 10px; */
+    margin-left: 0;
+    position: relative;
+    width: 100%;
+    margin-top: 28px;
+}
+.our_story1{margin-top:30px;}
+	.our_story {
+    position: relative;
+    margin-left: 4px;
+    margin-top: 0;
+    z-index: 100;
+	    text-align: center;
+}
+	.img_story3 {
+    width: 100%;
+    float: right;
+    position: relative;
+    margin-top: 6%;
+    left: 0;
+}
+.img_story3 img {
+    width: 300px;
+}
+	.banner_top h1 {
+    font-size: 31px;
+}
+	.bdr {
+    margin-bottom: 10px;
+	    margin-top: -15px;
+}
+.banner_bottom .COUPLES , .banner_bottom .Made{font-size:16px;}
+.banner_arrow {
+    margin-top: 36px;
+}
+.banner_bottom .COUPLES{    line-height: 28px;}
+		.contact_no ul {
+    list-style: none;
+    padding-left: 26px;
+}
+.hed_right nav ul li {
+    margin: 0px -1px;
+}
+.fout_rightt.tes11.text-center {
+    float: left;
+    width: 45%;
+}
+
+.input-prepend input[type="text"] {
+    width: 71%;
+}
+.input-prepend input.btn.btn-large {
+    margin-top: 19px;
+	    margin-left: 0px;
+}
+.testi h2 {
+    font-size: 22px;
+}
+.recon_right img {
+    margin-top: 20px;
+}
+.Fivetext_bottom {
+    padding-left: 38px;
+}
+.inner_box {
+    width: 100%;
+    margin-left: 0;
+    padding: 17px;
+	text-align: center;
+}
+.service_box {
+    width: 336px;
+	height: 703px;
+}
+.pricingheading h1 {
+    font-size: 35px;
+}
+.inner_box ul {
+    padding: 10px;
+    min-height: 200px;
+}
+.inner_box ul li {
+    width: 100%;
+}
+.Five h1{    margin-left: 0;}
+
+}
+@media only screen and (max-width: 768px){
+.room_services {
+    width: 97%;
+    float: left;
+    margin-left: 3%;
+}
+}
+@media only screen and (max-width: 767px){
+	h3.services_text {
+    font-size: 16px;
+    font-family: 'youngserifregular';
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+
+	.chooseus ul{padding-left:0 !important;}
+	.hotelimg:first-child{margin-top:77px;}
+	.hotelimg{margin-top:0px;}
+	.recon_right1 {
+    width: 100%;
+    float: right;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+li.hire {
+    line-height: 37px !important;
+    margin-top: 6px;
+}
+
+
+.cont .text_bottom {
+    padding-left: 15px;
+    padding-top: 14px;
+}
+.cont .week_right2 {
+    width: 50%;
+    float: left;
+}
+.cont .week_left2 {
+    width: 50%;
+    float: left;
+}
+.cont .textfive {
+    margin-left: 0;
+}
+.cont .textfive h1 {
+    margin: 0 auto !important;
+    text-align: center;
+    width: 100%;
+}
+.recon_right1 img {
+    width: 300px;
+}
+	.textbox2.hotel_textbox2 h4 {
+    font-size: 32px;
+}
+
+.textbox2.hotel_textbox2 p {
+    font-size: 20px !important;
+}
+
+	.hotel_text {
+    height: auto;
+}
+	.row.inner.apprtmentss .room {
+    margin-top: 0px !important;
+}
+.textbox2.hotel_textbox2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto !important;
+    padding: 20px;
+}
+.agent{    margin-top: 0px !important;}
+	.inner_box.inner_box_apprt img {
+    margin: 0 auto;
+}
+.book {
+    margin-top: 3% !important;
+}
+.Services .full {
+    background: #f1f1f3;
+    width: 100%;
+    float: left;
+    margin-top: 100px;
+    height: 587px !important;
+    position: relative;
+}
+	.our_story1{width:100% !important;}
+	.re_cont1 {
+    background: #f1f1f3;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 47px;
+    padding-top: 19px;
+    left: 0;
+    padding: 10px;
+}
+	.imgtest1 img {
+    width: 300px !important;
+}
+	.imgtest1 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 29px;
+    float: left;
+}
+	
+.inner_box {
+    width: 64%;
+    padding: 17px;
+    margin: 0 auto !important;
+    float: none !important;
+    display: table;
+}
+	.textbox1{float:none;}
+	.box {
+    background: #f6735d;
+    color: #fff;
+    padding: 20px;
+    MARGIN-TOP: 15PX;
+    margin-bottom: 71px;
+}
+.map2.col-md-7.col-sm-10.col-xs-10.pull-left {
+    float: right !important;
+}
+.map{    margin: 98px 0 242px;}
+	ul.pricefoot , ul.foot2{padding-left:0px;}
+	.hed.hed_pricing {
+    min-height: auto !important;
+}
+	.pricingheader .bgimge {
+    height: auto !important;
+}
+.div_vis {
+    width: 100%;
+    padding: 0px 15px;
+    margin: 10px 0px;
+}
+
+
+.pricing_single_service .book_visit {
+    margin: 0px auto;
+    float: none;
+}
+	.service_box {
+		    top: 102px;
+	height:auto !important;
+    padding: 0px 15px;
+    box-sizing: border-box;
+    position: relative;
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    margin: 0px 0px 20px !important;
+}
+.full-button .choose_button {
+    position: relative !important;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 23px auto;
+    text-align: center;
+    float: none;
+}
+.full-button {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+.choose_button {
+    position: relative !important;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 23px auto;
+    text-align: center;
+    float: left;
+}
+	.De_check{padding-top:10px !important;}
+	ul.story1 {
+    padding-left: 0;
+    margin: 0px;
+}
+	.footer_right , .hed_right{padding-left:0px !important;}
+	.input-prepend input.btn.btn-large {
+    margin-top: 19px;
+    margin-left: 0px;
+}
+	.week_right , .week_left{
+    width: 100%;
+    float: left;
+}
+.footer_logo {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+ul.week{
+    width: 100%;
+    margin-bottom: 0px;
+}
+ul.foot_logo {
+    padding-left: 0px;
+	    text-align: left;
+}
+.room_services{width:100%;margin-left:0px;}
+	.re_cont {
+    background: #fbf5f4;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+}
+.recon_right {
+    width: 100%;
+    float: right;
+    position: relative;
+    right: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+.room ul li, .whychooseus ul li {
+    line-height: 30px !important;
+    
+}
+.recont_secright.recont_secright_price {
+    width: 100%;
+    float: none !important;
+    position: relative;
+    top: 0%;
+    left: 0px;
+    padding: 0px 15px;
+    text-align: center;
+}
+.recont_secright {
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 0%;
+    left: 0px;
+	padding: 0px 15px;
+}
+.whychooseus ul{padding-left:0px !important;}
+	.banner_arrow {
+    margin-top: 8px;
+}
+.out_four , .hed , .icon{width:100% !important;}
+.recont_secright img {
+    width: 300px;
+    height: auto;
+}
+.fout_right.tes11.text-center , .fout_rightt.tes11.text-center{
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+.fout_left.tes11 {
+    text-align: left !important;
+}
+.book {
+    width: 100%;
+    text-align: left;
+    float: left;
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+.recont_sec , .room-bottom{width:100%;}
+.Fivetext_bottom , .room_services{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.Five_star{padding-left:15px;padding-right:15px;}
+.check_text {
+    margin-bottom: 10px;
+}
+	#desktop-arrow{display:none;}
+	#mobile-arrow{display:block !important;}
+	.circle_div {
+    animation-name: inherit !important;
+}
+	.navbar-nav>li>.dropdown-menu{min-height:auto;}
+	ul.nav.navbar-nav {
+    padding-left: 0px;
+    margin: 0px;
+}
+.hed_left {
+    padding-left: 15px !important;
+}
+.hed_right {
+    padding-right: 15px;
+}
+.contact_no ul {
+    list-style: none;
+    padding-left: 0px;
+}
+	.mobile_icon{display:block;  margin: 10px 0px;  text-align: right;}
+	.mobile_navigation {
+		display:none;
+    position: absolute;
+    z-index: 9;
+    background: #fff;
+    width: 100%;
+    border: 1px solid #ccc;
+    left: 0;
+    padding: 7px;
+	
+}
+li.dropdown img {
+    width: 2%;
+}
+.logo-out img {
+    max-width: 279px;
+}
+.contact_no ul li {
+    width: auto;
+    position: relative;
+    top: 22px;
+    float: left;
+}
+.text-right {
+    float: right;
+}
+.text-left {
+    float: left;
+    width: 53%;
+}
+.footer_right {
+    position: relative;
+    right: 0;
+	width: 100%;
+    padding-left: 0px;
+}
+
+
+.input-prepend input[type="text"] {
+    width: 34%;
+}
+.input-prepend input.btn.btn-large {
+    margin-top: -4px;
+}
+.recon_right img {
+    margin-top: 12px;
+    width: 300px;
+}
+}
+@media (max-width:730px) {
+	
+.service_box {
+    width: 313px;
+    height: 703px;
+}
+}
+@media (max-width: 680px) {
+	.pricingheading h1 {
+    font-size:19px !important;
+}
+
+
+		.De_check .container{padding-left:0px;padding-right:0px;}
+	.banner_top h1 {
+    font-size: 31px;
+}
+.input-prepend input[type="text"] {
+    width: 38%;
+}
+
+.service_box {
+    width: 300px;
+	height: 703px;
+}
+.pricingheading h1 {
+    font-size: 28px;
+}
+}
+@media (max-width: 650px) {
+  .col-md-3.team {
+    width: 100%;
+    display: block;
+  }
+  div#b {
+    margin-top: 30px;
+    width: 100%;
+}
+ul.week {
+    width: 100%;
+    margin-bottom: 0px;
+}
+.Decheck_bottom h3 {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top:5px;
+    font-family:'youngserifregular';
+}
+.input-prepend input[type="text"] {
+    width: 38%;
+}
+.service_box.pull-left.service_box_first {
+    margin: 0px 10px;
+    width: 95%;
+}
+.service_box.pull-right.service_box_second {
+     margin: 10px 10px;
+    width: 95%;
+}
+.pricingheading h1 {
+    font-size: 28px;
+}
+}
+@media (max-width: 608px){
+	.logo-out img {
+    max-width: 200px;
+}
+
+.contact_no ul li a{letter-spacing: 0px;font-size: 11px;}
+	.logo-out {
+    padding-top: 14px;
+    text-align: center;
+}
+.banner_top h1{width:100%;font-size: 32px;}
+	.top_button ul li {
+    padding-left: 11px;
+}
+span.eng {
+    padding-right: 1px;
+}
+span.nll {
+    margin-left: 3px;
+}
+
+li.club a{font-size:11px !important;}
+.input-prepend input[type="text"] {
+    width: 42%;
+    display: grid;
+}
+.input-prepend input.btn.btn-large {
+    margin-top: 19px;
+}
+.pricingheading h1 {
+    font-size: 28px;
+}
+}
+@media (max-width: 558px)
+{
+	.tabbable-line > .nav-tabs > li , .tabbable-line > .nav-tabs > li.active{margin-right: 7px;}
+	.tabbable-line ul.list-inline li a{    font-size: 14px;}
+.input-prepend input[type="text"] {
+    width: 52%;
+}
+.recon_right img {
+    margin-top: 42px;
+	    width: 250px;
+}
+.img_story3 img {
+    width: 250px;
+}
+.recont_secright img {
+    width: 250px;
+    height: auto;
+}
+
+
+.apparments h1 {
+    font-size: 38px;
+}
+.pricingheading h1 {
+    font-size: 31px;
+}
+.service_box {
+    width: 315px;
+    height: 701px;
+}
+.pricingheading h1 {
+    font-size: 28px;
+}
+}
+@media (max-width: 508px){
+	.book button{
+		    margin-top: 17px;
+	}
+	p.appartment{    margin-top: 73px;}
+	.banner_top h1 {
+    font-size: 18px !important;
+}
+.banner_bottom {
+    margin-top: 16px;
+}
+.banner_bottom .Made{line-height:0px !important;}
+.banner_bottom .COUPLES, .banner_bottom .Made {
+    font-size: 15px !important;
+}
+.bdr {
+    margin-bottom: 0px;
+    margin-top: -15px;
+}
+.apparments h1 {
+    font-size: 31px;
+}
+.pricingheading h1 {
+    font-size: 20px;
+}
+.service_box {
+    width: 312px;
+    height: 706px;
+}
+}
+@media (max-width: 476px){
+	.step_four {
+    text-align: center;
+}
+.fout_left.tes11, .fout_right.tes11.text-center, .fout_right.tes11.text-center, .fout_rightt.tes11.text-center, .pricing_single_service .room-bottom {
+    text-align: center !important;
+}
+ul.foot_logo {
+    text-align: center;
+}
+.recont_secright {
+    text-align: center;
+}
+	.chooseus h1{font-size:26px;}
+	.tabbable-line ul.list-inline li a {
+    font-size: 12px;
+}
+.tabbable-line > .nav-tabs > li.active , .tabbable-line > .nav-tabs > li{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+	.recon_right1 img {
+    width: 250px;
+}
+.cont .week_left2 {
+    width: 100%;
+    float: left;
+}
+.cont .week_right2 {
+    width: 100%;
+    float: left;
+}
+	.row.inner.apprtmentss .room {
+    margin-top: 0px !important;
+}
+	.card img {
+    width: 250px !important;
+}
+	.map2.col-md-7.col-sm-12.col-xs-12.pull-left {
+    padding: 0px;
+}
+	.whychooseus h1, .faqs h1 {
+    font-size: 26px;
+}
+.Services .full {
+    height: 615px !important;
+}
+
+.room-bottom {
+    text-align: center !important;
+}
+	.testimonial h1:after {
+    top: 105px;
+	    width: 72%;
+}
+div#book1 {
+    text-align: center;
+}
+div#book1 button {
+    margin-left: 0px;
+}
+	.testimonial h1 {
+    font-size: 35px;
+}
+.Five {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.re_cont1 {
+    background: #f1f1f3;
+    float: left;
+    width: 100%;
+    position: relative;
+    padding-bottom: 47px;
+    padding-top: 19px;
+    left: 0;
+    padding: 10px;
+}
+.five h4 , .five p{
+    margin-left: 24px;
+}
+.imgtest1 img {
+    width: 100%!important;
+}
+
+.img2{ margin-left:0px;}
+.textfive {
+    margin-left: 0;
+}
+	.room .inner_box .book {
+    padding: 0px;
+    text-align: center;
+}
+	.room:nth-of-type(even) .inner_box {
+    float: right;
+    margin-right: 70px;
+}
+.inner_box {
+    width: 85%;
+    margin-left: 0%;
+}}
+@media only screen and (max-width: 380px){
+	.textbox2.hotel_textbox2 p {
+    font-size: 17px !important;
+}
+.textbox2.hotel_textbox2 h4 {
+    font-size: 25px;
+}
+	.testimonial h1{font-size: 30px;}
+p.appartment {
+    text-align: center;
+    font-family: 'youngserifregular';
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+    text-align-last: initial;
+    margin-top: 55px;
+}
+.apparments h1::after {
+    top: 44px;
+}
+	.map2.col-md-7.col-sm-12.col-xs-12.pull-left{    padding: 0px;}
+	.col-md-push-5.col-md-9.col-sm-12.col-xs-12.top30 {
+    padding: 0;
+    margin: 0;
+}
+	ul.foot_logo {
+    text-align: center;
+}
+
+	.check_text {
+    margin-bottom: 0px;
+}
+.fout_left.tes11 , .fout_right.tes11.text-center , .fout_right.tes11.text-center , .fout_rightt.tes11.text-center , .pricing_single_service .room-bottom{text-align:center !important;}
+.pricing_single_service .book_visit {
+    margin: 0px auto;
+}
+.recont_secright {
+    text-align: center;
+}
+.whychooseus h1, .faqs h1{height:auto;}
+.testi {
+    width: 100%;
+    text-align: center;
+}
+ul.week.Graham li ,div#b h2 ,div#c h2 ,.Fivetext_bottom h2 ,.recon_right ,.book {
+    text-align: center;
+}
+
+.step_four {
+    text-align: center;
+}
+	.banner_bottom {
+    margin-top: 12px;
+}
+.input-prepend input[type="text"] {
+    width: 66%;
+}
+.apparments h1:after {
+    width: 415px;
+   
+}
+p.appartment {
+    margin-top: 77px;
+}
+.pricingheading h1 {
+    font-size: 17px !important;
+}
+}
+
+@media (max-width: 381px){
+	.pricingheading h1 {
+		    margin-top: 0px;
+    font-size: 14px !important;
+}
+	.banner_top h1 {
+    font-size: 13px !important;
+}
+.banner_bottom .Made{line-height:0px !important;}
+.banner_bottom .COUPLES, .banner_bottom .Made {
+    font-size: 11px !important;
+}
+.bdr {
+    margin-bottom: 0px;
+    margin-top: -15px;
+}
+.apparments h1 {
+    font-size: 30px;
+}
+.pricingheading h1 {
+    font-size: 20px;
+}
+}
+@media (max-width: 375px){
+	.textbox2.hotel_textbox2 p {
+    font-size: 16px !important;
+}
+	.map {
+    margin: 98px 0 280px;
+}
+		.banner_top h1 {
+    font-size: 13px !important;
+}
+.banner_bottom .Made{line-height:0px !important;}
+.banner_bottom .COUPLES, .banner_bottom .Made {
+    font-size: 11px !important;
+}
+.banner_bottom {
+    margin-top: 8px;
+}
+.bdr {
+    margin-bottom: 0px;
+    margin-top: -15px;
+}
+.banner_top h1 {
+    font-size: 28px;
+}
+.pricingheading h1 {
+    font-size: 20px;
+}
+.input-prepend input[type="text"] {
+    width: 77%;
+}
+p.appartment {
+    margin-top: 77px;
+}
+.apparments h1 {
+    font-size: 25px;
+}
+.apparments h1:after {
+    width: 347px;
+}
+}
+
+@media only screen and (max-width: 350px){
+	.tabbable-line ul.list-inline li a {
+    font-size: 11px;
+}
+.tabbable-line > .nav-tabs > li.active, .tabbable-line > .nav-tabs > li {
+    margin-right: 3px;
+    margin-left: 3px;
+}
+}

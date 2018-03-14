@@ -1,0 +1,99 @@
+ {% load staticfiles %}
+ <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+           
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+<!-- jQuery -->
+    <script src="{% static 'assets/vendors/jquery/dist/jquery.min.js'%}"></script>
+	<!-------table ----->
+    <script src="{% static 'assets/vendors/datatables.net/js/jquery.dataTables.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-bs/js/dataTables.bootstrap.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-scroller/js/dataTables.scroller.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-responsive/js/dataTables.responsive.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-keytable/js/dataTables.keyTable.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/bootstrap/dist/js/bootstrap.min.js'%}"></script> 	
+    <script src="{% static 'assets/vendors/fastclick/lib/fastclick.js'%}"></script>
+    <script src="{% static 'assets/vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js'%}"></script>
+
+    <script src="{% static 'assets/vendors/nprogress/nprogress.js'%}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/vendors/Chart.js/dist/Chart.min.js'%}"></script>
+    <!-- FastClick -->
+    <script src="{% static 'assets/vendors/gauge.js/dist/gauge.min.js'%}"></script>
+    <!-- NProgress -->
+    <script src="{% static 'assets/vendors/iCheck/icheck.min.js'%}"></script>
+    <!-- Chart.js -->
+    <script src="{% static 'assets/vendors/skycons/skycons.js'%}"></script>
+    <!-- gauge.js -->
+   
+    <!-- bootstrap-progressbar -->
+
+    <!-- iCheck -->
+    <script src="{% static 'assets/vendors/Flot/jquery.flot.js'%}"></script>
+	 <script src="{% static 'assets/vendors/Flot/jquery.flot.pie.js'%}"></script>
+    <!-- Skycons -->
+    <script src="{% static 'assets/vendors/Flot/jquery.flot.time.js'%}"></script>
+    <!-- Flot -->
+    <script src="{% static 'assets/vendors/Flot/jquery.flot.stack.js'%}"></script>
+    <script src="{% static 'assets/vendors/Flot/jquery.flot.resize.js'%}"></script>
+    <script src="{% static 'assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js'%}"></script>
+    <script src="{% static 'assets/vendors/flot-spline/js/jquery.flot.spline.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/flot.curvedlines/curvedLines.js'%}"></script>
+    <!-- Flot plugins -->
+    <script src="{% static 'assets/vendors/DateJS/build/date.js'%}"></script>
+    <script src="{% static 'assets/vendors/jqvmap/dist/jquery.vmap.js'%}"></script>
+    <script src="{% static 'assets/vendors/jqvmap/dist/maps/jquery.vmap.world.js'%}"></script>
+	 <script src="{% static 'assets/vendors/select2/dist/js/select2.full.min.js'%}"></script>
+	 <script src="{% static 'assets/vendors/parsleyjs/dist/parsley.min.js'%}"></script>
+    <!-- DateJS -->
+    <script src="{% static 'assets/vendors/jqvmap/examples/js/jquery.vmap.sampledata.js'%}"></script>
+    <!-- JQVMap -->
+    <script src="{% static 'assets/vendors/moment/min/moment.min.js'%}"></script>
+    <script src="{% static 'assets/vendors/bootstrap-daterangepicker/daterangepicker.js'%}"></script>
+    <script src="{% static 'assets/vendors/validator/validator.js'%}"></script>
+    <script src="{% static 'assets/build/js/custom.min.js'%}"></script>
+    <!-- bootstrap-daterangepicker -->
+    
+	 <script>
+ //$('#datatable').dataTable(); 
+  $("#datatable").dataTable({
+     "bJQueryUI":true,
+      "bSort":false,
+      "bPaginate":true,
+      "sPaginationType":"full_numbers",
+       "iDisplayLength": 10
+}); 
+ $("#datatable12").dataTable({
+     "bJQueryUI":true,
+      "bSort":false,
+      "bPaginate":true,
+      "sPaginationType":"full_numbers",
+       "iDisplayLength": 10
+}); 
+$("#datatable1").dataTable({
+     "bJQueryUI":true,
+      "bSort":false,
+      "bPaginate":true,
+      "sPaginationType":"full_numbers",
+       "iDisplayLength": 10
+});
+
+ $("#datatable3").dataTable({
+     "bJQueryUI":true,
+      "bSort":false,
+      "bPaginate":true,
+      "sPaginationType":"full_numbers",
+       "iDisplayLength": 10
+});
+
+	 
+ </script>
+  </body>
+</html>

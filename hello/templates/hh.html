@@ -1,0 +1,16 @@
+
+{% load staticfiles %}
+<input type="text" id="get" >
+<input type="button" id="ff" onclick="getval()" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+function getval(){
+var a = $('#get').val();
+if(a=='mypass')
+{
+window.location.href
+}
+}
+</script>
+{% block content %}
+{% endblock %}

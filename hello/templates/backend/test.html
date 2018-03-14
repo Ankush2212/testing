@@ -1,0 +1,100 @@
+ {% load staticfiles %} 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/static/assets/vendors/parsleyjs/dist/parsley.min.js"></script>
+<script src="{% static 'assets/vendors/validator/validator.js'%}"></script>
+    <script src="{% static 'assets/build/js/custom.min.js'%}"></script>   
+<!-- Custom Theme Style -->
+    <link href="{% static 'assets/build/css/custom.min.css'%}" rel="stylesheet">
+    <link href="{% static 'assets/build/css/custom.css'%}" rel="stylesheet">
+ <title> Home | Add User </title>
+        <!-- page content -->
+       
+          <div class="right_col" role="main" >
+			<div class="success1" id="truee" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog modal-sm">
+                   <h4>  {{success}}</h4>
+					</div>
+                </div>	
+			
+	  <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3>Add User</h3>
+				<div class="success"></div>
+              </div>
+
+               </div>
+            <div class="clearfix"></div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                 
+                  <div class="x_content">
+                    <br />
+                    <form id="demo-form2" data-parsley-validate method="post" action=""  class="form-horizontal form-label-left" >
+ {% csrf_token %}
+                      <div class="form-group">
+					   
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="city">First Name<span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+						
+                          <input type="text" id="servicename"  name="firstname"  required="required" value="" class="form-control col-md-7 col-xs-12 ">
+                        </div>
+                      </div> 
+					 
+                      
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pincode">Last Name <span class="required">*</span> 
+                        </label>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="lastname"  name="lastname"  required="required" value="" class="form-control col-md-7 col-xs-12 ">
+                        </div>
+                      </div>
+					  
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pincode">User Name <span class="required">*</span> 
+                        </label>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="username"  name="username"  required="required" value="" class="form-control col-md-7 col-xs-12 ">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pincode">Contact Number <span class="required">*</span> 
+                        </label>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="contact"  name="contact"  required="required" value="" class="form-control col-md-7 col-xs-12 ">
+                        </div>
+                      </div>
+					  <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="pincode">Email <span class="required">*</span> 
+                        </label>
+                       <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="email"  name="email"  required="required" value="" class="form-control col-md-7 col-xs-12 ">
+                        </div>
+                      </div>
+					 
+					  
+					  
+					    <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <!--button class="btn btn-primary" type="button">Cancel</button-->
+						  <!--button class="btn btn-primary" type="reset">Reset</button-->
+                          <button type="submit" name="add" id="update"  class="btn btn-success">Submit</button>
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+			
+        <!-- /page content -->
+		
+		
+		

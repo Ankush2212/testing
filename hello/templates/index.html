@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Clubfred</title>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/style.css'%}"/>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}"/>
+	<link rel="stylesheet" href="{% static 'css/responsive.css'%}"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/youngserif" type="text/css"/>
+	<link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+	<!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script-->
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+
+		<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+
+		  // Store hash
+		  var hash = this.hash;
+
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	<script>
+$(document).ready(function(){
+    $(".mobile_icon i").click(function(){
+        $(".mobile_navigation").slideToggle();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+var text = ["KOPPELS", "EXPATS", "AIRBNB","PROFESSIONALS","HOTELS","SINGLES"];
+var counter = 0;
+var elem = document.getElementById("changeText");
+setInterval(change, 800);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+}
+});
+</script>
+  </head>
+  <body>
+<div class="main">    
+  <div class="container">
+	   <div class="most_outer">
+		 <!-- header Sections -->
+		   <div class="header">
+			 <div class="col-md-2 col-sm-2 col-xs-12 hed_left">
+				<div class="logo-out"><a href="{% url 'index' %}"><img src="{% static 'images/logo.png'%}"></a></div>
+			 </div>
+			 <div class="col-md-10 col-sm-10 col-xs-12 hed_right">
+			    <div class="top_right">
+				    <div class="col-md-3 col-sm-3 col-xs-12 text-left">
+					   <div class="contact_no">
+					      <ul>
+							  <li><img class="phone" src="{% static 'images/phone.png'%}"><a href=""><span class="num">24/7</span> 020 341 38 14</a></li>
+							</ul>
+					   </div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12 text-right">
+					   <div class="top_button">
+					     <ul>
+							  <li class="club"><a href="{% url 'onzeprijzen' %}"><span class="club_s">Join the club</span></a></li>
+							  <li class="eng_list"><a href="{% url 'en'%}"><span class="eng">ENG</span>/</a><a href="{% url 'index' %}"><span class="nll underline">NL</span></a></li>
+						 </ul>	  
+					   </div>
+					</div>
+				</div>
+				<div class="bottom_right">
+				    <nav class="navbar">
+					<div class="mobile_icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+					  <div class="container-fluid">
+						<!--div class="navbar-header">
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+						</div-->
+						<div class="mobile_navigation">
+						<ul class="nav navbar-nav">
+						  <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">HOUSEKEEPING
+							<!--i class="fa fa-angle-down" aria-hidden="true"></i-->
+							
+							<img id="updown"src="{% static 'images/arror.png'%}"></a>
+							<ul class="dropdown-menu personnal" id="js-scroll-nav2">
+							  <li><p>Uw eigen home manager voor het huishouden.</p></li>
+							  <li class="more meer"><a id="firstone" href="#Een_vijf">Meer over housekeeping</a></li>
+							</ul>
+						  </li>	
+                           <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">FRED KOOKT
+							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+							
+							<img id="updown"src="{% static 'images/arror.png'%}"></a>
+							<ul class="dropdown-menu personnal_one" id="js-scroll-nav1">
+							  <li><p>Koken wordt leuker <br>als Fred het<br> voor u doet.</p></li>
+							  <li class="more"><a href="#fred_kookt">Meer over koken</a></li>
+							  <!-- <li class="more"><a href="#">See Our Prices</a></li> -->
+							</ul>
+						  </li> 
+						  <li><a href="{% url 'woningverhuur'%}">WONING VERHUUR</a></li>
+						  <li><a href="{% url 'hotel'%}">HOTELS</a></li>
+						</ul>
+						</div>
+					  </div>
+					</nav> 
+				</div>
+			 </div>
+		   </div>
+		   <div class="clear" style="clear: both;"></div>		   
+		 <!--end Header Sections--->
+		 
+		 
+		 <!--Banner Sections--->
+		  <div class="col-md-12 col-sm-12 col-xs-12 banner_out">
+		  
+		    <div class="banner"><img src="{% static 'images/banner.jpg'%}">
+			</div>
+			<div class="banner_text">
+			    <div class="banner_top"><h1>Het gemak van een </br>hotel aan huis.</h1></div> 
+				 
+				<div class="bdr"><img src="{% static 'images/bdr.jpg'%}"></div>    
+				<div class="banner_bottom"><h5><span class="Made">Perfect voor</span></br><span id="changeText" class="COUPLES">KOPPELS</span></h5></div>
+                
+					<div class="banner_arrow" id="desktop-arrow">
+					    <div class="circle_div" data-wow-duration="20s" data-wow-iteration="100" style="visibility: visible; animation-duration: 10s; animation-iteration-count: 100; animation-name: bounce;"><a href="#check-in"><!--i class="fa fa-angle-down" aria-hidden="true"></i-->
+						
+						<img src="{% static 'images/arror.png'%}"></a></div>
+					</div>				
+			</div>
+		  </div>
+		   <div class="clear" style="clear: both;"></div>	
+		   <!--Banner Sections End--->
+		   <div class="banner_arrow" id="mobile-arrow">
+					    <div class="circle_div"><a href="#check-in"><!--i class="fa fa-angle-down" aria-hidden="true"></i-->
+						
+						<img src="{% static 'images/arror.png'%}"></a></div>
+					</div>	
+		 <!--Banner Sections bottom--->
+		  <div class="col-md-12 col-sm-12 col-xs-12 De_check" id="check-in">
+		       <div class="container">
+			      <div class="check_text" id="check-in">
+				     <h1 style="text-align: center;">De check in. </h1>
+					 
+					
+				  </div>
+				  
+					  <div class="Decheck_bottom1">
+						 <div class="col-md-3 col-sm-6 col-xs-12 step_four">
+						   <h4>01</h4>
+						   <h3>De intake</h3>
+						   <p>Uw wensen genoteerd door de city manager.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-6 col-xs-12 step_four">
+							<h4>02</h4>
+						   <h3>Jouw eigen Fred.</h3>
+						   <p>Een betrouwbare home manager voor in huis.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-6 col-xs-12 step_four">
+							<h4>03</h4>
+						   <h3>Home management.</h3>
+						   <p>Uw woning en sleutels altijd goed verzorgd.</p>
+						 </div>
+						 <div class="col-md-3 col-sm-6 col-xs-12 step_four">
+						   <h4>04</h4>
+						   <h3>Relax.</h3>
+						   <p>Heerlijk thuiskomen na <br> een lange dag werken.</p>
+						 </div>
+					   </div>   
+				</div>  
+			</div>
+			<div class="clear" style="clear: both;"></div>	
+			<!--4 step end--->	
+			<div class="col-md-12 col-sm-12 col-xs-12 Five_star" id="Een_vijf">
+			    <div class="re_cont">
+				   <div class="Five_text">
+				      <h1 style="text-align: center;">Een vijf sterren huis </h1>
+				   </div>
+				   <div class="Fivetext_bottom">
+				      <div id="a">
+					     <h2>Elke week een fris huis</h2>
+					     <ul class="week">
+						 <li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Hotel housekeeping service</a></li>
+							<li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Een werkwijze met oog VOOR detail</a></li>
+							<li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Extra aandacht voor objecten in huis</a></li>
+							
+						 </ul>
+					     
+					  </div>
+					  <div id="b">
+					    <h2> Een betrouwbare home manager</h2>
+					     <ul class="week">
+						
+							<li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Screening en training op hotel etiquette</a></li>
+							<li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Uw woning met liefde verzorgd</a></li>
+							<li><img class="abc" src="{% static 'images/Websiteicons15.png'%}"><a>Sleutel service</a></li>
+						 </ul>
+					  </div>
+					  <div id="c">
+					    <h2>Op maat gemaakt </h2>
+						<div class="week_left">
+					       
+					       
+					       <ul class="week">
+						    <li><img class="abc" src="{% static 'images/tidy.png'%}"><a>Kamers opgeruimd</a></li>
+							<li><img class="abc" src="{% static 'images/dil.png'%}"><a>Bedden opgemaakt</a></li>
+							<li><img class="abc" src="{% static 'images/flower.png'%}"><a>Bloemen verzorgd</a></li>
+						 </ul>
+					    </div>
+						<div class="week_right">
+					       <ul class="week"> 
+					      
+						    <li><img class="abc" src="{% static 'images/laundary.png'%}"><a>Wassen en strijken</a></li>
+							<li><img class="abc" src="{% static 'images/home1.png'%}"><a>Een schoon huis</a></li>
+							<li><img class="abc" src="{% static 'images/wastage.png'%}"><a>Afval gescheiden</a></li>
+						 </ul>
+					    </div>
+				      </div>
+					  
+					</div>	
+					<div class="recon_right">
+					  <img src="{% static 'images/right-side.jpg'%}">
+					</div>	
+					<div class="book">
+					<button class="button" type="button" ><a href="{% url 'onzeprijzen' %}" style="text-transform: uppercase;">Bekijk prijzen</a></span>
+					</button>
+					</div>				
+			   </div>
+		   </div>
+		     <div class="clear" style="clear: both;"></div>	
+		   <!--4 step end--->	
+		   
+		   <div class="col-md-12 col-sm-12 col-xs-12 room_services" id="fred_kookt">
+		        <div class="recont_sec">
+				  <div class="Five_text">
+				      <h1 style="text-align: center;">Uw favoriete maaltijd</h1>
+				   </div>
+				   <div class="room-bottom">
+				     <div class="out_four">
+					     <div class="col-md-6 col-sm-6 col-xs-12 fout_left tes11 text-center">
+						        
+								 <div class="icon"><img src=" {% static 'images/four3-black.png'%}"></div>
+								 <div class="hed"><h2>Boodschappen bezorgd.</h2>
+								   <h4> Uw favoriete <br/> boodschappen weer in <br/> huis gehaald.
+									</h4>
+								 </div>								 
+
+						 </div>
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_left tes11 text-center">
+						         <div class="icon"><img src=" {% static 'images/four2-black.png'%}"></div>
+								 <div class="hed"><h2>Recepten.</h2>
+								   <h4> Kies een gerecht <br/> naar keuze <br/> of laat u verassen. 
+										 </h4>
+								 </div>								 
+
+						 </div>
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_right tes11 text-center">
+						        <div class="icon"><img src=" {% static 'images/four1-black.png'%}"></div>
+								 <div class="hed"><h2>Bespaar geld.</h2>
+								   <h4>U bespaard wekelijks <br/> omdat wij vooruit <br/> koken.
+										</h4>
+								 </div>
+						 </div>
+						 
+						 <div class="col-md-6 col-sm-6 col-xs-12 fout_right tes11 text-center">
+						        <div class="icon"><img src=" {% static 'images/four4-black.png'%}"></div>
+								 <div class="hed"><h2>Avondeten.</h2>
+								   <h4>Het avondeten staat klaar wanneer u klaar bent met werken.
+										</h4>
+								 </div>
+						 </div>
+						 
+						  
+
+
+						 <div class="footer_logo">
+								 <ul class="foot_logo"> 
+								 <ul class="foot_logo"> 
+								 <ul class="foot_logo"> 
+								 <ul class="foot_logo"> 
+												  <li><img src="{% static 'images/3rd_logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/2nd-logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/1st_logo.jpg'%}"></li>
+												  <li><img src="{% static 'images/5th_logo.jpg'%}"></li>
+								  </ul>
+						 </div>
+					 </div>
+				   
+				   </div>
+				    <div class="recont_secright">
+					  <img src="{% static 'images/left-side.jpg'%}">
+					</div>   
+				</div>
+		     
+		   
+		   </div>
+		   <div class="clear" style="clear: both;"></div>	
+		    <!--room Services end --->
+		   <div class="col-md-12 col-sm-12 col-xs-12 Five_star">
+		     	<div class="re_cont">
+				   <!--div class="Five_text">
+				      <h1 style="text-align: center;">A five star home</h1>
+				   </div-->
+				   <div class="Fivetext_bottom">
+				      <div id="a">
+					     <h2>Graham S.</h2>
+					     <ul class="week Graham">
+						    <li>Lead supply chain @Unilever</li>
+							<li>Van Switzerland.</li>
+						 </ul>
+					     
+					  </div>
+					  <div class="testi">
+					    <h2>“Er is een</h2>
+						<h2>gevoel van rust </h2>
+						<h2>en kalmte als je</h2>
+						<h2> thuiskomt en alles</h2>
+						<h2> opgeruimd is. Geen </h2>
+						<h2>enkele andere dienst</h2>
+						<h2>doet het op deze manier.”</h2>						
+					  </div>
+					  <div class="book" id="book"><button type="button"><a href="{% url 'onzeprijzen' %}">Bekijk prijzen</a></button></div>	
+					</div>	
+					<div class="recon_right">
+					  <img src="{% static 'images/right-side2.jpg'%}">
+					</div>				
+			   </div>
+		    
+		   
+		   </div>
+		   
+		   <!--Five_star end --->
+		   
+		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer" id="bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left">
+				   <h1>Clubfred.</h1>
+				     <ul class="hot">
+				       <li> Hotelservice aan huis</li>
+					   <li> Herengracht 91</li>
+					   <li>1015 BD  Amsterdam</li>
+					   <!--li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get">Get started with fred.</li-->
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right">				 
+                        <p> Blijf op de hoogte en ontvang leuke hotel acties</p>
+						<form action="" method="post">
+							<div class="input-prepend"><input type="text" id="" name="" placeholder="EMAIL@DOMAIN.COM	">
+							<input type="submit" value="Inschrijven" class="btn btn-large"/ id="testimh" onsubmit="myFunction()">
+							</div>
+					  </form>
+					  <!--h1>Follow Us</h1>
+						 <ul class="soc">
+							  <li><img src="images/facebook.png"></li>
+							   <li><img src="images/twitter.png"></li>
+							   <li><img src="images/instagram.png"></li>
+							   <li><img src="images/pintrest.png"></li>
+							   <li><img src="images/linkdin.png"></li>						   
+						 </ul-->					 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left" id="f_left">
+				     <ul class="hot">
+					   <li> <span class="call"> Bel ons  </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					    <li class="get"><a href="{% url 'onzeprijzen' %}">Get started with Fred.</a></li>
+					  
+				     </ul>
+					
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right" id="f_right">				 
+					  <h1>Volg ons</h1>
+						 <ul class="soc">
+						
+							   <li><a href="https://www.facebook.com/CIubfred" target="_blank">
+							   <img src="{% static 'images/facebook.png'%}"></a></li>
+							   <li><a href="https://twitter.com/CIubfred" target="_blank">
+							   <img src="{% static 'images/twitter.png'%}"></a></li>
+							   <li><a href ="https://www.instagram.com/clubfred_/" target="_blank">
+							   <img src="{% static 'images/instagram.png'%}"></a></li>
+							   <li><a href ="https://in.pinterest.com/clubfredNL/" target="_blank">
+							   <img src="{% static 'images/pintrest.png'%}"></a></li>
+							   <li><a href ="https://www.linkedin.com/company/CIubfred/" target="_blank">
+							   <img src="{% static 'images/linkdin.png'%}"></a></li>							   
+						 </ul>					 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  
+			  
+			  
+			  
+			   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer12">
+				   <div class="footer_left pull-left">
+				   <h5 class="fred">© 2018 Clubfred.</h5>
+				   </div>
+				   <div class="footer_right pull-right">
+					  <div class="how">
+								   <ul class="story1">
+									   <!--li> <a href="#cheaack-in">Ons verhaal |</a></li>
+									
+									  <li><a href="#">Onze prijzen |</a></li>
+									   <li><a href="#"> Appartementen |</a></li>
+									   <li><a href="#"> Hotels |</a></li>
+									   <li><a href="#">Testimonials |</a></li>
+									   <li><a href="#">Vacatures |</a></li>
+									   <li><a href="#">Fred Academy</a></li-->	
+									   <li><a href="{% url 'onzeprijzen' %}">Onze prijzen |</a></li>
+									   <li><a href="{% url 'woningverhuur'%}">Woning verhuur |</a></li>									  
+									   <!--li><a href="http://www.clubfred.nl/en/hotel.html"> Hotels |</a></li-->
+									   <li><a href="{% url 'hotel'%}"> Hotels |</a></li>
+									   <li><a href="https://clubfred.recruitee.com/" target="_blank">Vacatures </a></li>									   
+								 </ul>
+							 </div>
+				   </div>
+				   </div>  
+			   
+		   
+		   
+</div>
+</div>		
+<style>
+.input-prepend input.btn.btn-large {
+    padding: 3px 33px 0px 32px;
+}
+ul.dropdown-menu.personnal li.meer a {
+    padding: 10px 40px 10px 37px;
+}
+li.more {
+    margin-left: 3px !important;
+    margin-top: -17px;
+    color: #f6735d;
+}
+li.meer
+{
+    margin-left: 3px !important;
+    margin-top: -17px;
+    color: #f6735d;
+}
+</style>		
+  </body>
+</html>  
+<script>
+function myFunction() {
+    alert("Thank you, we’ll handle your email with care");
+}
+</script>
+<script>
+$(document).ready(function () {
+    $(".dropdown").click(function () {
+     
+	  var path=$(this).find('#updown').attr('src');
+	  
+	if(path == "/static/images/arror.png"){
+	var chec=$(this).find('#updown').attr('src','/static/images/up.png');
+	}else
+	{
+	var chec=$(this).find('#updown').attr('src','/static/images/arror.png');
+	}
+    });
+});
+    $("#testimh").click(function () {
+	alert("Thank you, we’ll handle your email with care");
+	
+	});
+
+</script>

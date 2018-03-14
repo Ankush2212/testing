@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+{% load staticfiles %} 
+<html>
+
+
+  <head>
+    <title>Clubfred</title>
+	 <meta charset="iso-8859-1"> 
+	 <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static '/css/style.css'%}"/>
+	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css'%}"/>
+	<link rel="stylesheet" href="{% static '/css/responsive.css'%}"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/youngserif" type="text/css"/>
+	<script src="{% static '/js/jquery.min.js'%}"></script>
+	<script src="{% static '/js/bootstrap.min.js'%}"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	
+	
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>	
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>	
+
+	
+	
+	
+	<script>
+	
+$(document).ready(function(){
+ 
+
+    $(".mobile_icon i").click(function(){
+        $(".mobile_navigation").slideToggle();
+    });
+});
+</script>
+<style>
+h1.thanks_heading {
+    background: #ffffff8c;
+    padding: 49px 10px;
+    font-size: 30px;
+    text-align: center;
+    color: #f6735d;
+}
+</style>
+  </head>
+  <body>
+<div class="main pixel">    
+  <div class="container ">
+	   <div class="most_outer">
+		 <!-- header Sections -->
+		   <div class="header">
+			 <div class="col-md-2 col-sm-2 col-xs-12 hed_left">
+				<div class="logo-out"><a href="{% url 'en'%}"><img src="{% static '/images/logo.png'%}"></a></div>
+			 </div>
+			 <div class="col-md-10 col-sm-10 col-xs-12 hed_right">
+			    <div class="top_right">
+				    <div class="col-md-3 col-sm-3 col-xs-12 text-left">
+					   <div class="contact_no">
+					      <ul>
+							  <li><img class="phone" src="{% static '/images/phone.png'%}"><a href=""><span class="num">24/7</span> 020 341 38 14</a></li>
+							</ul>
+					   </div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12 text-right">
+					   <div class="top_button">
+					     <ul>
+							  <li class="club"><a href="{% url 'pricing'%}"><span class="club_s">Join the club</span></a></li>
+							  <li class="eng_list"><a href="{% url 'pricing'%}"><span class="eng underline">ENG</span>/</a><a href="{% url 'onzeprijzen' %}"><span class="nll">NL</span></a></li>
+						 </ul>	  
+					   </div>
+					</div>
+				</div>
+				<div class="bottom_right">
+				    <nav class="navbar">
+					  <div class="container-fluid">
+					  <div class="mobile_icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+						<!--div class="navbar-header">
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+						</div-->
+						<div class="mobile_navigation">
+						<ul class="nav navbar-nav">
+						  <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">HOUSEKEEPING
+<img id="updown"src="{% static 'images/arror.png'%}">							
+							<!--i class="fa fa-angle-down" aria-hidden="true"></i--></a>
+							<ul class="dropdown-menu personnal">
+							  <li><p>Your personnal manager has just arrived</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							</ul>
+						  </li>	
+                           <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">ROOM SERVICE
+							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> --><img id="updown"src="{% static 'images/arror.png'%}"></a>
+							<ul class="dropdown-menu personnal_one">
+							  <li><p>Like your favorite </br>hotel, only this</br> time at home !</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							  <li class="more"><a href="#">See Our Prices</a></li>
+							</ul>
+						  </li> 
+						  <li><a href="{% url 'holiday' %}">AIRBNB</a></li>
+						  <li><a href="{% url 'hotel' %}">HOTELS</a></li>					  
+						</ul>
+						</div>
+					  </div>
+					</nav> 
+				</div>
+			 </div>
+		   </div>
+		   <div class="clear" style="clear: both;"></div>		   
+		 <!--end Header Sections--->
+		
+		{% if success == 1 %}
+			<div class="jumbotron"><h1 class="thanks_heading">Thanks to confirm your booking.</h1></div>
+             <!-- path 1 -->
+		{% else %}
+			<div class="jumbotron"><h1 class="thanks_heading">Sorry, your time is out.Please try again and select a service.</h1></div>
+			
+		{% endif %}
+		 
+		   <div class="clear" style="clear: both;"></div>	
+		   
+	<div class="clear" style="clear: both;"></div>
+	 <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer" id="bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left">
+				   <h1>Clubfred.</h1>
+				     <ul class="hot">
+				       <li>Hotel service at home</li>
+					   <li> Herengracht 91</li>
+					   <li>1015 BD  Amsterdam</li>
+					   <!--li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get">Get started with fred.</li-->
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right">				 
+                        <p>Stay in touch and receive hotel gifts</p>
+						<form action="" method="post">
+							<div class="input-prepend"><input type="text" id="" name="" placeholder="EMAIL@DOMAIN.COM	">
+							<input type="submit" value="Subscribe" class="btn btn-large" id="testimh" onsubmit="myFunction()">
+							</div>
+					  </form>
+					  <!--h1>Follow Us</h1>
+						 <ul class="soc">
+							  <li><img src="../images/facebook.png"></li>
+							   <li><img src="../images/twitter.png"></li>
+							   <li><img src="../images/instagram.png"></li>
+							   <li><img src="../images/pintrest.png"></li>
+							   <li><img src="../images/linkdin.png"></li>						   
+						 </ul-->					 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left" id="f_left">
+				     <ul class="hot">
+					   <li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get"><a href="{% url 'pricing' %}">Get started with Fred.</a></li>
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right" id="f_right">				 
+					  <h1>Follow Us</h1>
+						 <ul class="soc">
+							   <li><a href="https://www.facebook.com/hulpje" target="_blank"><img src="{% static '/images/facebook.png'%}"></a></li>
+							   <li><a href="https://twitter.com/hulpje" target="_blank"><img src="{% static '/images/twitter.png'%}"></a></li>
+							   <li><a href ="https://www.instagram.com/clubfred_/" target="_blank"><img src="{% static '/images/instagram.png'%}"></a></li>
+							   <li><a href ="https://in.pinterest.com/clubfredNL/" target="_blank"><img src="{% static '/images/pintrest.png'%}"></a></li>
+							   <li><a href ="https://www.linkedin.com/clubfred" target="_blank"><img src=" {% static '/images/linkdin.png'%}"></a></li>						   
+						 </ul>				 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  
+			  
+			  
+			  
+			   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer12">
+				   <div class="footer_left pull-left">
+				   <h5 class="fred">&copy; 2018 Clubfred.</h5>
+				   </div>
+				   <div class="footer_right pull-right">
+					  <div class="how">
+								   <ul class="story">
+									    <!--li> <a href="story.html">Our story |</a></li>
+									   <li><a href="pricing.html">Our plans |</a></li>
+									   <li><a href="appartments.html">Apartments |</a></li>
+									   <li><a href="hotel.html"> Hotels |</a></li>
+									   <li><a href="testimonail.html">Testimonials |</a></li>
+									   <li><a href="#">Jobs |</a></li>
+									   <li><a href="#">Fred Academy</a></li-->	
+									   <li><a href="{% url 'pricing'%}">Our Plans |</a></li>
+									   <li><a href="{% url 'holiday'%}">Airbnb |</a></li>
+									   <li><a href="{% url 'hotel'%}"> Hotels |</a></li>
+									   <li><a href="https://clubfred.recruitee.com/" target="_blank">Jobs</a></li>
+								 </ul>
+							 </div>
+				   </div>
+				 </div>  
+				
+			</div>
+			</div>
+		
+ 	
+<script>
+$(document).ready(function() {
+
+  $(".toggle-accordion").on("click", function() {
+    var accordionId = $(this).attr("accordion-id"),
+      numPanelOpen = $(accordionId + ' .collapse.in').length;
+    
+    $(this).toggleClass("active");
+
+    if (numPanelOpen == 0) {
+      openAllPanels(accordionId);
+    } else {
+      closeAllPanels(accordionId);
+    }
+  })
+
+  openAllPanels = function(aId) {
+    console.log("setAllPanelOpen");
+    $(aId + ' .panel-collapse:not(".in")').collapse('show');
+  }
+  closeAllPanels = function(aId) {
+    console.log("setAllPanelclose");
+    $(aId + ' .panel-collapse.in').collapse('hide');
+  }
+     
+});
+
+
+
+</script>	 
+
+
+
+
+				   
+			 
+  </body>
+</html>  
+
+			

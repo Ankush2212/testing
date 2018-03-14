@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clubfred</title>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/responsive.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/youngserif" type="text/css"/>
+	<link rel='stylesheet prefetch' href='http://daneden.github.io/animate.css/animate.min.css'>
+   <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.css'>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js'></script>
+    <script  src="js/index.js"></script>
+	<script src="js/jquery.matchHeight-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+$(document).ready(function(){
+    $(".mobile_icon i").click(function(){
+        $(".mobile_navigation").slideToggle();
+    });
+});
+</script>
+	 <!--<script>
+		$(function() {
+	
+		
+		$('.client').matchHeight();
+		$('.inner_box').matchHeight();
+	});
+	</script>-->
+  </head>
+  
+  <body>
+<div class="main">    
+  <div class="container">
+	   <div class="most_outer">
+		<!-- header Sections -->
+		   <div class="header">
+			 <div class="col-md-2 col-sm-2 col-xs-12 hed_left">
+				<div class="logo-out"><a href="http://www.clubfred.nl/en/"><img src="../images/logo.png"></a></div>
+			 </div>
+			 <div class="col-md-10 col-sm-10 col-xs-12 hed_right">
+			    <div class="top_right">
+				    <div class="col-md-3 col-sm-3 col-xs-12 text-left">
+					   <div class="contact_no">
+					      <ul>
+							  <li><img class="phone" src="../images/phone.png"><a href=""><span class="num">24/7</span> 020 341 38 14</a></li>
+							</ul>
+					   </div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12 text-right">
+					   <div class="top_button">
+					     <ul>
+							  <li class="club"><a href="pricing.html"><span class="club_s">Join the club</span></a></li>
+							  <li class="eng_list"><a href="testimonail.html"><span class="eng underline">ENG</span>/</a><a href="{% url 'index' %}"><span class="nll">NL</span></a></li>
+						 </ul>	  
+					   </div>
+					</div>
+				</div>
+				<div class="bottom_right">
+				    <nav class="navbar">
+					<div class="mobile_icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+					  <div class="container-fluid">
+						<!--div class="navbar-header">
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+						</div-->
+						<div class="mobile_navigation">
+						<ul class="nav navbar-nav">
+						  <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">HOUSEKEEPING
+							<!--i class="fa fa-angle-down" aria-hidden="true"></i--><img id="updown"src="../images/arror.png"></a>
+							<ul class="dropdown-menu personnal">
+							  <li><p>Your personnal manager has just arrived</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							</ul>
+						  </li>	
+                           <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">ROOM SERVICE
+							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> --><img id="updown"src="../images/arror.png"></a>
+							<ul class="dropdown-menu personnal_one">
+							  <li><p>Like your favorite </br>hotel, only this</br> time at home !</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							  <li class="more"><a href="#">See Our Prices</a></li>
+							</ul>
+						  </li> 
+						  <li><a href="holiday.html">AIRBNB</a></li>
+						  <li><a href="hotel.html">HOTELS</a></li>					  
+						</ul>
+						</div>
+					  </div>
+					</nav> 
+				</div>
+			 </div>
+		   </div>
+		   <div class="clear" style="clear: both;"></div>		   
+		 <!--end Header Sections--->
+		  <div class="row">
+		 	<div class="col-md-12 col-sm-12 col-xs-12 testimonial">
+			      
+				     <h1 style="text-align: center;">What our clients thinks about us</h1>
+					 
+					 
+					 <p class="testimonial ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eros nunc, vulputate eget auctor <br>eget, egestas quis sem. </p>
+				  
+				  </div>
+		 </div>
+		  <div class="row inner">
+		 <div class="col-md-6 room client ">
+			<div class="inner_box checking">
+			<img src="../images/test_03.png" class="img-responsive">
+			<h4>Graham S.</h4>
+			<span>Lead supply chain @Unilever</span><br><span>
+From Zwitserland.</span>
+
+
+			<p>“There is a sense of peace and calm when you come home and everything looks organized. 
+It’s incredible, no other service does it this way.”</p>
+
+			
+		</div>
+		</div>
+		
+		<div class="col-md-6 room client ">
+			<div class="inner_box checking">
+			<img src="../images/test_01.png" class="img-responsive">
+			<h4>Alice K.</h4>
+			<span>Vivamus convallis purus et metus</span><br><span> tempor mollis.</span>
+
+
+			<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eros nunc, vulputate eget auctor eget, egestas quis sem. Aliquam lacinia est nisl, nec pharetra ligula fermentum id.”</p>
+
+			
+		</div>
+		</div>
+		
+		<div class="col-md-6 room client">
+			<div class="inner_box checking">
+			<img src="../images/test_4.png" class="img-responsive">
+			<h4>John B.</h4>
+			<span>Proin at orci eu velit sollicitudin pretium </span><br><span> a ac ibero</span>
+			<p>“ Vestibulum convallis feugiat dolor, et tincidunt mi posuere non.
+
+</p><p>Nullam risus enim, dignissim ac dolor sed, consectetur pretium velit. ”</p>
+
+			
+		</div>
+		</div>
+		
+		<div class="col-md-6 room client ">
+			<div class="inner_box checking">
+			<img src="../images/test_2.png" class="img-responsive">
+			<h4>Helen T.</h4>
+			<span>Donec rutrum tellus sit amet augue  </span><br><span>maximus maximus</span>
+			<p>“ Vestibulum convallis feugiat dolor, et tincidunt mi posuere non. Nullam risus enim, dignissim ac dolor sed, consectetur pretium velit. ”</p>
+
+			
+		</div>
+		</div>
+		
+		
+		</div>
+			
+		
+		 <div class="col-md-12 col-sm-12 col-xs-12 Five">
+
+		     	<div class="re_cont1">
+				   <!--div class="Five_text">
+				      <h1 style="text-align: center;">A five star home</h1>
+				   </div-->
+				   <div class="Fivetext">
+				      <div id="a">
+					     <h1 style="text-align: center;">Get started with Fred</h1>
+					     <h4 style="text-align:center;">nam ut lorem areu.Proin at orci eu velit sollicitudin pretium a ac libero.</h4>
+					     </div>
+						  
+					  <div class="col-md-6 col-sm-6 col-xs-12">
+					  <div class="textfive">
+					  <p>Vivamus diam areu,cursus sed lorem eu,porttitor</p>
+					  posuere lectus.Maecenas velit ipsum,scelerisque</p>
+					  in pretium tempor,varius ac metus.Proin elit</p>
+					  lorem, vulputate sit amet tempus nec.</p>
+					  </div>
+					  <div class="img2"> <img  src="../images/Websiteicons15.png" ></div>
+					 <div class="five">
+					  
+					  <h4 id="d" >Nullam id consectetur justo. </h4>
+					  <p id="b">Nam malesuada semper mattis. Morbi feugiat,<br> dolor a venenatis tincidunt.</p>
+					  <div > <img class="img2"  src="../images/Websiteicons15.png" ></div>
+					  
+					  <h4>Vivamus convallis purus et metus. </h4>
+					  <p id="b" >Nam malesuada semper mattis. Morbi feugiat,<br> dolor a venenatis tincidunt.</p>
+					  
+					  </div>
+                  
+					  
+					  
+					  
+					  <div class="book1" id="book1"><button type="button">Contact Us</button></div>	
+					</div>	
+				
+					  <div class="imgtest1"> <img  src="../images/test_5.png"  style="width:50%";></div>
+					</div>				
+			   </div>
+		    
+		   
+		   </div>
+
+		   <!--Five_star end --->
+		   
+		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer" id="bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left">
+				   <h1>Clubfred.</h1>
+				     <ul class="hot">
+				       <li>Hotel service at home</li>
+					   <li> Herengracht 91</li>
+					   <li>1015 BD  Amsterdam</li>
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right">				 
+                        <p>Stay in touch and receive hotel gifts</p>
+						<form action="" method="post">
+							<div class="input-prepend"><input type="text" id="" name="" placeholder="EMAIL@DOMAIN.COM	">
+							<input type="submit" value="Subscribe" class="btn btn-large" id="testimh" onsubmit="myFunction()">
+							</div>
+					  </form>
+					   
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left" id="f_left">
+				     <ul class="hot">
+					   <li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get"><a href="pricing.html">Get started with Fred.</a></li>
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right" id="f_right">				 
+					  <h1>Follow Us</h1>
+						 <ul class="soc">
+							   <li><a href="https://www.facebook.com/hulpje"><img src="../images/facebook.png"></a></li>
+							   <li><a href="https://twitter.com/hulpje"><img src="../images/twitter.png"></a></li>
+							   <li><a href ="https://www.instagram.com/clubfred_/"><img src="../images/instagram.png"></a></li>
+							   <li><a href ="https://in.pinterest.com/clubfredNL/"><img src="../images/pintrest.png"></a></li>
+							   <li><a href ="https://www.linkedin.com/clubfred"><img src="../images/linkdin.png"></a></li>						   
+						 </ul>					 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  
+			  
+			  
+			  
+			   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer12">
+				   <div class="footer_left pull-left">
+				   <h5 class="fred">© 2018 Clubfred.</h5>
+				   </div>
+				   <div class="footer_right pull-right">
+					  <div class="how">
+								   <ul class="story">
+									   <!--li> <a href="story.html">Our story |</a></li>
+									   <li><a href="pricing.html">Our plans |</a></li>
+									   <li><a href="appartments.html">Apartments |</a></li>
+									   <li><a href="hotel.html"> Hotels |</a></li>
+									   <li><a href="testimonail.html">Testimonials |</a></li>
+									   <li><a href="#">Jobs |</a></li>
+									   <li><a href="#">Fred Academy</a></li-->	
+									   <li><a href="pricing.html">Our Plans |</a></li>
+									   <li><a href="holiday.html">Airbnb |</a></li>
+									   <li><a href="hotel.html"> Hotels |</a></li>
+									   <li><a href="#">Jobs</a></li>
+								 </ul>
+							 </div>
+				   </div>
+				 </div>  
+	</div>
+</div>
+		 

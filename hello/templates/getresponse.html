@@ -1,0 +1,31 @@
+{% load staticfiles %}
+{% block content %}
+<style>
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+</style>
+  <div class="container">
+
+
+<h2>Get data from database</h2>
+<form method="post" action="{% url 'updateuserrecord'%} ">
+ {% csrf_token %}
+<label>First Name</label><input type="text" name="firstname" value="{{getresponse.first_name}}"><br>
+<label>Last Name</label><input type="text" name="lastname" value="{{getresponse.last_name}}"><br>
+<label>Email</label><input type="text" name="email" value="{{getresponse.email}}"><br>
+<label>Description</label><input type="text" name="description" value="{{getresponse.description}}">
+<input type="hidden" name="userid" value="{{getresponse.id}}">
+<br>
+<input type="submit" value="Update">
+</form>
+
+
+</table>
+
+</div>
+{% endblock %}

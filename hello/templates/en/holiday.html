@@ -1,0 +1,597 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clubfred</title>
+    <meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="{% static 'css/style-holiday.css'%}"/>
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}"/>
+	<link rel="stylesheet" href="{% static 'css/responsive.css'%}"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/youngserif" type="text/css"/>
+	<script src="{% static 'js/jquery.min.js'%}"></script>
+	<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="/static/assets/vendors/parsleyjs/dist/parsley.min.js"></script>
+<script src="{% static 'assets/vendors/validator/validator.js'%}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!------------------------------------popup libraray---------------------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="https://cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+	
+	  
+	
+	<script>
+$(document).ready(function(){
+    $(".mobile_icon i").click(function(){
+        $(".mobile_navigation").slideToggle();
+    });
+});
+</script>
+<style>
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+form#login-nav .form-group {
+    margin-bottom:40px;
+}
+
+form#login-nav label {
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #f6735d;
+    font-size: 17px;
+    font-weight: normal;
+}
+#login-nav .form-control {
+    border: none;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+    border-radius: 0px;
+	    padding-bottom: 20px;
+	padding-left: 0px;
+}
+.pricing_form .checkbox label {
+    color: #f6735d;
+	    font-weight: 600 !important;
+}
+button.btn.btn-primary.submit_pricing {
+    background: #f6735d;
+    padding: 20px 34px;
+    border: none;
+    border-radius: 0 !important;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 58%;
+    letter-spacing: 2px;
+}
+
+h4#myModalLabel2 {
+    text-align: center;
+    color: #f6735d;
+    font-size: 20px;
+}
+.pricing_form {
+    margin-top: 32px;
+    float: left;
+    width: 100%;
+}
+div#datetimepicker5 input {
+    border: 1px solid #efefef !important;
+    padding-top: 13px;
+    padding-left: 10px !important;
+}
+.messages {
+    width: 36%;
+    margin: 0px auto;
+    display: table;
+    left: 0;
+    top: 136px;
+    bottom: 0;
+    height: auto !important;
+    padding: 14px 0;
+    color: #f6735d;
+    background-color: #fbf5f3;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 99999999999 !important;
+    box-shadow: 6px 3px 13px -1px #888888;
+    right: 0;
+}
+</style>
+
+
+
+
+
+	<script>
+$(document).ready(function(){
+    $(".mobile_icon i").click(function(){
+        $(".mobile_navigation").slideToggle();
+    });
+});
+</script>
+  </head>
+  <body>
+   {% if messages %}
+				  <div class="messages">
+					{% for message in messages %}
+					  <h1 class="{{ message.tags }}" style="text-align:center">{{ message }}</h1>
+					{% endfor %}
+				  </div>
+				{% endif %}
+<div class="main">    
+  <div class="container">
+	   <div class="most_outer">
+		 <!-- header Sections -->
+		
+		   <div class="header">
+			 <div class="col-md-2 col-sm-2 col-xs-12 hed_left">
+				<div class="logo-out"><a href="{% url 'en'%}"><img src="{% static 'images/logo.png'%}"></a></div>
+			 </div>
+			 <div class="col-md-10 col-sm-10 col-xs-12 hed_right">
+			    <div class="top_right">
+				    <div class="col-md-3 col-sm-3 col-xs-12 text-left">
+					   <div class="contact_no">
+					      <ul>
+							  <li><img class="phone" src="{% static 'images/phone.png'%}"><a href=""><span class="num">24/7</span> 020 341 38 14</a></li>
+							</ul>
+					   </div>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12 text-right">
+					   <div class="top_button">
+					     <ul>
+							  <li class="club"><a href="{% url 'pricing'%}"><span class="club_s">Join the club</span></a></li>
+							  <li class="eng_list"><a href="{% url 'holiday'%}"><span class="eng underline">ENG</span>/</a><a href="{% url 'index' %}"><span class="nll">NL</span></a></li>
+						 </ul>	  
+					   </div>
+					</div>
+				</div>
+				<div class="bottom_right">
+				    <nav class="navbar">
+					<div class="mobile_icon"><i class="fa fa-bars" aria-hidden="true"></i></div>
+					  <div class="container-fluid">
+						<!--div class="navbar-header">
+						  <a class="navbar-brand" href="#">WebSiteName</a>
+						</div-->
+						<div class="mobile_navigation">
+						<ul class="nav navbar-nav">
+						  <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">HOUSEKEEPING
+							<!--i class="fa fa-angle-down" aria-hidden="true"></i--><img id="updown" src="{% static 'images/arror.png'%}"></a>
+							<ul class="dropdown-menu personnal">
+							  <li><p>Your personnal manager has just arrived</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							</ul>
+						  </li>	
+                           <li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">ROOM SERVICE
+							<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> --><img id="updown" src="{% static 'images/arror.png'%}"></a>
+							<ul class="dropdown-menu personnal_one">
+							  <li><p>Like your favorite </br>hotel, only this</br> time at home !</p></li>
+							  <li class="more"><a href="#">More Info</a></li>
+							  <li class="more"><a href="#">See Our Prices</a></li>
+							</ul>
+						  </li> 
+						  <li><a href="{% url 'holiday' %}">AIRBNB</a></li>
+						  <li><a href="{% url 'hotel' %}">HOTELS</a></li>					  
+						</ul>
+						</div>
+					  </div>
+					</nav> 
+				</div>
+			 </div>
+		   </div>
+		   <div class="clear" style="clear: both;"></div>		   
+		 <!--end Header Sections--->
+		
+		   
+		   <!--banner Sections--->
+		    <div class="col-md-12 col-sm-12 col-xs-12 bannerview">
+			 <div class="col-md-6 col-sm-6 col-xs-12 textholiday bannerview">
+			 <div class="textbox">
+			 <h4>Property <br>Management</br> Service</h4>
+ <p>Our agents take care of guest support, key <br>exchange, bookings and  housekeeping while you are out. </p>
+			  </div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 bannerview">
+			   <img src="{% static 'images/HolidayRental_04.png'%}">
+			  </div>
+			  </div>
+			  <!--Banner Sections End--->
+		   
+		 <!--Banner Sections bottom--->
+		  <div class="col-md-12 col-sm-12 col-xs-12 De_check">
+			      <div class="check_text">
+				     <h1 style="text-align: center;">Property care by Fred </h1>
+					 <h5 class="Clubfred ">Clubfred handles all the logistical burdens
+					  and services customized to your home.</br>With our agents your home, property, and guests are always in good hands.</h5>
+				  </div> 
+			<div class="col-md-6 col-sm-6 col-xs-12 Services">
+			
+			     <div class="full">		
+                     <h3>FULL SEVICES </h3>					 
+				       <div class="Rentals">
+						 <h4>“Rentals experience 20-50% higher </br>
+							earnings when using our full service <br>
+							vs self-managing their listing.”</h4>
+						</div>
+						<div class="included">
+							<h5>What’s included: </h5>
+								<ul class="included_one">
+									  <li>Housekeeping service </li>
+									  <li>Check-in and key service </li>
+									  <li>Booking management  </li>
+									  <li>Linen package</li>
+									  <li>Screening of guests </li>
+									  <li>Welcome package</li>
+									  <li>24/7 service </li>
+								</ul>
+						</div>
+						
+						<div class="book"><button class="iddd" type="button" onclick="return hotelservice('fullservice')">BOOK VISIT</button></div>
+				  </div>
+				  
+			</div>	 
+			<div class="col-md-6 col-sm-6 col-xs-12 Services">
+			     
+				 <div class="full_right">
+				 <h3>LITE SEVICES </h3>
+				    <div class="Rentals">
+						 <h4>“A little help from Fred </br>
+                            makes a huge difference for your </br>
+							guests experience.”</h4>
+						</div>
+						<div class="included">
+							<h5>What’s included: </h5>
+								<ul class="included_one">
+									  <li>Housekeeping service  </li>
+									  <li>Check-in and key service  </li>
+									  <li>Linen package </li>
+									  <li>Welcome package</li>
+								</ul>
+						</div>
+				 
+				 
+				 <div class="book iddd" id="bok"><button type="button" onclick="return hotelservice('liteservice')">BOOK VISIT</button></div>
+				  </div>
+				  
+				  
+			</div>	  
+		  </div>
+			<div class="clear" style="clear: both;"></div>	
+			<!--4 step end--->
+			<div class="col-md-12 col-sm-12 col-xs-12 agent">
+			    <div class="check_text agent_text">
+					<h1 style="text-align: center; padding-top: 30px;">Agent Fred </h1>
+					<h5 class="Clubfred ">We make your guests feel at home.  </h5>
+			     </div>
+				<div class="icon_out">
+				     <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					    <div class="icon"><img src="{% static 'images/home.png'%}"></div>
+						<div class="hed"><h2>Home interior.</h2>
+						   <h4>Providing interior design and maintenance </br>
+                                to boost performance</h4>
+						 </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					     <div class="icon"><img src="{% static 'images/2nd.png'%}"></div>
+						 <div class="hed"><h2>Pricing.</h2>
+						   <h4>We increase your earnings</br> up to 50%</h4>
+						 </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					     <div class="icon"><img src="{% static 'images/3rd.png'%}"></div>
+						 <div class="hed"><h2>Screening.</h2>
+						   <h4>With your set of rules we invite the right guests</h4>
+						 </div>
+					 </div> 
+					 <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					    <div class="icon"><img src="{% static 'images/4th.png'%}"></div>
+						<div class="hed"><h2>Personal check-in.</h2>
+						   <h4>A warm welcome <br>for any guest</h4>
+						 </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					     <div class="icon"><img src="{% static 'images/5th.png'%}"></div>
+						 <div class="hed"><h2>Calendar management.</h2>
+						   <h4>Always up to date when guest check in and out</h4>
+						 </div>
+					 </div>
+					 <div class="col-md-4 col-sm-4 col-xs-12 text-center">
+					     <div class="icon icon_onee"><img src="{% static 'images/6th.png'%}"></div>
+						 <div class="hed"><h2>Guest support 24/7.</h2>
+						   <h4>For questions, concerns and repairs</h4>
+						 </div>
+					 </div>
+  					 
+					<div class="g_start"><button type="button"><a href="{% url 'pricing'%}">GET STARTED</a></button></div> 
+				</div>
+			</div>
+			<div class="clear" style="clear: both;"></div>	
+			<!--footer--->
+			
+			
+			<div class="col-md-12 col-sm-12 col-xs-12 footer">
+			   <div class="check_text booking_text" style="margin-bottom: 35px;">
+					<h1 style="text-align: center; padding-top: 30px;">Our booking channels</h1>
+					<h5 class="Clubfred ">We use up to 20 booking channels across the internet</h5>
+			    </div>
+				<div class="footer_logo">
+				     <ul class="foot_logo" style="padding-left: 0px;">
+									  <li><img src="{% static 'images/3rd_logo.jpg'%}"></li>
+									  <li><img src="{% static 'images/2nd-logo.jpg'%}"></li>
+									  <li><img src="{% static 'images/1st_logo.jpg'%}"></li>
+									  <li><img src="{% static 'images/5th_logo.jpg'%}"></li>
+					  </ul>
+				</div>
+			</div>
+			
+			 <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer" id="bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left">
+				   <h1>Clubfred.</h1>
+				     <ul class="hot">
+				       <li>Hotel service at home</li>
+					   <li>Brouwersgracht 246</li>
+					   <li>1013 HE, Amsterdam</li>
+					  </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right">				 
+                        <p>Stay in touch and receive hotel gifts</p>
+						<form action="" method="post">
+							<div class="input-prepend"><input type="text" id="" name="" placeholder="EMAIL@DOMAIN.COM	">
+							<input type="submit" value="Subscribe" class="btn btn-large" id="testimh" onsubmit="myFunction()">
+							</div>
+					  </form></div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  		   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer">
+		      <div class="col-md-6 col-sm-6 col-xs-12 footer_left">
+			    <div class="f_left" id="f_left">
+				     <ul class="hot">
+					   <li> <span class="call"> Call us </span> 24/7 020 341 38 14</li>
+					   <li>hello@clubfred.nl</li>
+					   <li class="get"><a href="{% url 'pricing'%}">Get started with Fred.</a></li>
+					   
+				     </ul>
+
+				</div>
+			  </div>
+			  <div class="col-md-6 col-sm-6 col-xs-12 footer_right">
+			        <div class="f_right" id="f_right">				 
+					  <h1>Follow Us</h1>
+						<ul class="soc">
+
+  <li><a href="https://www.facebook.com/CIubfred" target="_blank">
+  <img src="{% static 'images/facebook.png'%}"></a></li>
+  <li><a href="https://twitter.com/CIubfred" target="_blank">
+  <img src="{% static 'images/twitter.png'%}"></a></li>
+  <li><a href ="https://www.instagram.com/clubfred_/" target="_blank">
+  <img src="{% static 'images/instagram.png'%}"></a></li>
+  <li><a href ="https://in.pinterest.com/clubfredNL/" target="_blank">
+  <img src="{% static 'images/pintrest.png'%}"></a></li>
+  <li><a href ="https://www.linkedin.com/company/CIubfred/" target="_blank">
+  <img src="{% static 'images/linkdin.png'%}"></a></li>	  
+</ul> 				 						 
+						 
+						 
+					</div>
+					
+					
+			  </div>
+			  </div>
+			  
+			  
+			  
+			  
+			  
+			    
+			   <div class="col-md-12 col-sm-12 col-xs-12 bootom_footer12">
+				   <div class="footer_left pull-left">
+				   <h5 class="fred">
+&copy; 2018 Clubfred.</h5>
+				   </div>
+				   <div class="footer_right pull-right">
+					  <div class="how">
+								   <ul class="foot1">
+								    <ul class="story">
+									  <li><a href="{% url 'pricing'%}">Our Plans |</a></li>
+									   <li><a href="{% url 'holiday' %}">Airbnb |</a></li>
+									   <li><a href="{% url 'hotel' %}"> Hotels |</a></li>
+									   <li><a href="https://clubfred.recruitee.com/" target="_blank">Jobs</a></li>
+								 </ul>
+							 </div>
+							 </div>
+				   </div>
+				 </div>  
+			   
+</div>
+</div>
+
+
+<div class="confirm_popup modal bs-example-modal-sm" id="deletee" tabindex="-1" role="dialog" aria-hidden="true">
+                   <div class="modal-dialog modal-md">
+                     <div class="modal-content">
+
+                       <div class="modal-header">
+                         <button type="button" class="popup_close close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span>
+                         </button>
+                         <h4 class="modal-title" id="myModalLabel2">Property care by Fred</h4>
+                       </div>
+                     
+                       <div class="modal-footer">
+ <div class="pricing_form">
+		
+		<form action="{% url 'fullliteserviceenglish'%}" data-parsley-validate method ="post">
+									 {% csrf_token %}
+									<div class="col-md-6 col-sm-6">
+									<div class="form-group">
+											 <input type="text" required="required" class="form-control" id="firstname ifg" placeholder="Enter Firstname" name="firstname">
+										</div>
+										<div class="form-group">
+											 <input type="email" required="required" class="form-control" id="email" placeholder="Enter email" name="email">
+										</div>
+										<div class="form-group">
+											 <input type="text"  class="form-control" id="address" placeholder="Enter Address" name="address">
+										</div>
+											<div class="form-group">
+											 <input style="width:100px;" type="text"  class="form-control" id="zip" placeholder="Enter Zip" name="zipcode">
+										</div>
+		</div>
+		<div class="col-md-6 col-sm-6">
+		<div class="form-group">
+											 <input type="text"  class="form-control" id="lastname" placeholder="Enter Lastname" name="lastname">
+										</div>
+										<div class="form-group">
+											 <input type="text" required="required" class="form-control" id="Number" placeholder="Enter Number" name="mobilenumber">
+											 <input type="hidden" id="amount" name="services">
+										</div>
+										<div class="form-group">
+											 <input type="text"  class="form-control" id="unit" placeholder="Enter Unit" name="unit">
+										</div>
+									
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker5'>
+                    <input placeholder="Select Date/time" name="date" type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+			
+	<script type="text/javascript">
+            $(function () {
+                $('#datetimepicker5').datetimepicker({
+                    defaultDate: "11/1/2013",
+                    disabledDates: [
+                        moment("12/25/2013"),
+                        new Date(2013, 11 - 1, 21),
+                        "11/22/2013 00:53"
+                    ]
+                });
+            });
+        </script>
+		</div>
+		<div class="col-md-12">
+										<div class="form-group" style="text-align:center;">
+											 <button type="submit" class="btn btn-primary submit_pricing">Signup</button>
+										</div>
+										</div>
+								 </form>
+		
+		
+		</div>
+                         </div>
+                       </div>
+
+                     </div>
+                   </div>
+
+
+				
+  </body>
+</html>  
+<script>
+$(document).ready(function () {
+    $(".dropdown").click(function () {
+     
+	  var path=$(this).find('#updown').attr('src');
+	if(path == "/static/images/arror.png"){
+	var chec=$(this).find('#updown').attr('src','/static/images/up.png');
+	}else
+	{
+	var chec=$(this).find('#updown').attr('src','/static/images/arror.png');
+	}
+    });
+});
+    $("#testimh").click(function () {
+	alert("Thank you, we'll handle your email with care");
+	
+	});
+</script>  
+<script>
+$(document).ready(function(){
+    $(".iddd").click(function(){
+      $('.confirm_popup').show();
+    });
+  $(".popup_close").click( function () {
+ $('.confirm_popup').hide();
+    });
+});
+
+function  hotelservice(a)
+	{
+		$('#amount').val(a);
+		$('.confirm_popup').show();
+	
+	}
+	
+	  $(".popup_close").click( function () {
+		  $('.confirm_popup').hide();
+		  
+	  });
+	   setTimeout(function() {
+					$(".messages").hide()
+				}, 4000);
+</script>

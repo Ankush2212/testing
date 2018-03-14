@@ -1,0 +1,54 @@
+{% load staticfiles %}
+{% block content %}
+<style>
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid black;
+}
+</style>
+  <div class="container">
+
+
+<h2>Get data from database</h2>
+<table >
+<tr>
+	<th>Sr.No</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Email</th>
+	<th>Description</th>
+	<th>Action</th>
+	<th>Action</th>
+</tr>	
+
+{% for data in getrecord%}
+<tr>
+	<td>1</td>
+	<td>
+		{{data.first_name}}
+	</td>
+	<td>
+		{{data.last_name}}
+	</td>
+	<td>
+		{{data.email}}
+	</td>
+	<td>{{data.description}}
+		</td>
+	<td>
+	<a href="{% url 'user_details' data.id  %}" >Edit</a>
+		</td>
+		<td>
+	<a href="{% url 'deleteuser' data.id  %}" >Delete</a>
+		</td>
+</tr>
+ 	
+{% endfor %}
+
+</table>
+
+</div>
+{% endblock %}

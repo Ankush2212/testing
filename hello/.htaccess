@@ -1,0 +1,4 @@
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^clubfred.nl [NC]
+RewriteRule ^(.*)$ http://www.clubfred.nl/$1 [L,R=301,NC]
